@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Trive (http://www.trive.digital/) All rights reserved.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      layout="admin-2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Trive\Revo\Block\Adminhtml\Slider\Edit" name="admin.block.slider.edit" />
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Trive\Revo\Block\Adminhtml\Slider\Edit\Tabs" name="admin.block.slider.tabs">
+                <block class="Trive\Revo\Block\Adminhtml\Slider\Edit\Tab\General" name="admin.block.slider.tab.general" />
+                <block class="Trive\Revo\Block\Adminhtml\Slider\Edit\Tab\Advanced" name="admin.block.slider.tab.advanced" />
+                <block class="Trive\Revo\Block\Adminhtml\Slider\Edit\Tab\Products" name="admin.block.slider.tab.products" />
+            </block>
+        </referenceContainer>
+    </body>
+
+</page>
