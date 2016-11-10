@@ -37,7 +37,7 @@ abstract class Slider extends \Magento\Backend\App\Action {
     protected $_resultRawFactory;
 
     /**
-     * @var \Trive\Revo\Model\ProductsliderFactory
+     * @var \Trive\Revo\Model\ProductSliderFactory
      */
     protected $_sliderFactory;
 
@@ -52,7 +52,7 @@ abstract class Slider extends \Magento\Backend\App\Action {
      * @param \Magento\Framework\View\LayoutFactory $layoutFactory
      * @param \Magento\Framework\Controller\Result\RawFactory $resultRawFactory
      * @param \Magento\Backend\Model\View\Result\ForwardFactory $resultForwardFactory
-     * @param \Trive\Revo\Model\ProductsliderFactory $productsliderFactory
+     * @param \Trive\Revo\Model\ProductSliderFactory $productsliderFactory
      * @param \Magento\Framework\Registry $coreRegistry
      */
     public function __construct(
@@ -61,7 +61,7 @@ abstract class Slider extends \Magento\Backend\App\Action {
         \Magento\Framework\View\LayoutFactory $layoutFactory,
         \Magento\Framework\Controller\Result\RawFactory $resultRawFactory,
         \Magento\Backend\Model\View\Result\ForwardFactory $resultForwardFactory,
-        \Trive\Revo\Model\ProductsliderFactory $productsliderFactory,
+        \Trive\Revo\Model\ProductSliderFactory $productSliderFactory,
         \Magento\Framework\Registry $coreRegistry
     ){
         $this->_resultPageFactory = $resultPageFactory;
@@ -69,7 +69,7 @@ abstract class Slider extends \Magento\Backend\App\Action {
         $this->_resultRawFactory = $resultRawFactory;
         $this->_resultForwardFactory = $resultForwardFactory;
         $this->_resultRedirectFactory = $context->getResultRedirectFactory();
-        $this->_sliderFactory = $productsliderFactory;
+        $this->_sliderFactory = $productSliderFactory;
         $this->_coreRegistry = $coreRegistry;
         parent::__construct($context);
     }
