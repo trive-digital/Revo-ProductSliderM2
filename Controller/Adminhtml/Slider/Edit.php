@@ -38,7 +38,7 @@ class Edit extends \Trive\Revo\Controller\Adminhtml\Slider {
         $this->_coreRegistry->register('product_slider', $model);
 
         $resultPage = $this->_resultPageFactory->create();
-        $resultPage->getConfig()->getTitle()->prepend(__('Product Slider'));
+        $resultPage->getConfig()->getTitle()->prepend(__('Revo Product Slider'));
         return $resultPage;
     }
 

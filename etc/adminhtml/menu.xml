@@ -8,7 +8,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend/etc/menu.xsd">
     <menu>
-        <add id="Trive_Revo::productslider" title="Product Sliders" module="Trive_Revo" resource="Trive_Revo::productslider" parent="Trive_Core::admin" />
+        <add id="Trive_Revo::productslider" title="Revo Product Slider" module="Trive_Revo" resource="Trive_Revo::productslider" parent="Trive_Core::admin" />
         <add id="Trive_Revo::manage_sliders" title="Manage Sliders" module="Trive_Revo" resource="Trive_Revo::manage_sliders" parent="Trive_Revo::productslider" action="productslider/slider/index"/>
         <add id="Trive_Revo::config" title="Settings" module="Trive_Revo" resource="Trive_Revo::config" sortOrder="20" parent="Trive_Revo::productslider" action="adminhtml/system_config/edit/section/productslider"/>
     </menu>
