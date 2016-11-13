@@ -24,7 +24,7 @@ Or **mix and match** with the ones you want, or just make a **custom slider**. C
 
 <br/>
 
-# New**
+# Latest updates:**
 - **Enable color swatches**
 - **Ajax add to cart**
 
