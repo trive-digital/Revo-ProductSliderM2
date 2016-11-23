@@ -2,7 +2,7 @@
   "name": "trive/module-revo",
   "description": "A Magento 2 module for managing product carousel",
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": [
     "OSL-3.0",
     "AFL-3.0"
