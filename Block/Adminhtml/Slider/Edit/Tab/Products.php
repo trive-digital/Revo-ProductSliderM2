@@ -54,7 +54,6 @@ class Products extends \Magento\Backend\Block\Widget\Grid\Extended {
         \Magento\Framework\Registry $coreRegistry,
         \Magento\Framework\App\ResourceConnection $resource,
         \Magento\Catalog\Model\Product\Visibility $catalogProductVisibility,
-        \Magento\Store\Model\StoreManagerInterface $storeManagerInterface,
         array $data = []
     ){
         $this->_productFactory = $productFactory;
@@ -62,7 +61,7 @@ class Products extends \Magento\Backend\Block\Widget\Grid\Extended {
         $this->_coreRegistry = $coreRegistry;
         $this->_resource = $resource;
         $this->_catalogProductVisibility = $catalogProductVisibility;
-        $this->_storeManager = $storeManagerInterface;
+        $this->_storeManager = $context->getStoreManager();
         parent::__construct($context, $helper, $data);
     }
 
