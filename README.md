@@ -38,7 +38,7 @@ pass: <strong>demo123</strong>
 # Installation:
 <h2>Step 1</h2>
 - <strong>using Composer</strong>: in magento root installation folder run this using the command line:<br/>
-  - <strong>composer require trivr/module-revo</strong>
+  - <strong>composer require trive/module-revo</strong>
  
 - <strong>or uploading files directly:</strong> 
 	- download the core ZIP file from <a href="https://github.com/JakeSharp/CoreM2/archive/master.zip">here</a> 
