@@ -121,7 +121,7 @@ class Slider extends \Magento\Framework\View\Element\Template implements \Magent
 
         // If widget_slider_id is not null
         if($widgetSliderId){
-            $sliderCollection->addFieldToFilter('slider_id',$widgetSliderId);
+            $sliderCollection->addFieldToFilter('trs.slider_id',$widgetSliderId);
         } else {
             $sliderCollection->addFieldToFilter('location',$location);
         }
@@ -154,7 +154,7 @@ class Slider extends \Magento\Framework\View\Element\Template implements \Magent
         }
 
         if($widgetSliderId){
-            $sliderCollectionTimer->addFieldToFilter('slider_id',$widgetSliderId);
+            $sliderCollectionTimer->addFieldToFilter('trs.slider_id',$widgetSliderId);
         } else {
             $sliderCollectionTimer->addFieldToFilter('location',$location);
         }
