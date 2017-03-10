@@ -41,11 +41,11 @@ pass: <strong>demo123</strong>
   - <strong>composer require trive/module-revo</strong>
  
 - <strong>or uploading files directly:</strong> 
-	- download the core ZIP file from <a href="https://github.com/JakeSharp/CoreM2/archive/master.zip">here</a> 
+	- download the core ZIP file from <a href="https://github.com/trive-digital/CoreMagento2/archive/master.zip">here</a> 
 	- extract files
 	- create directory in the <strong>app/code/Trive/Core</strong>
 	- upload extracted files there
-	- download the module ZIP file from <a href="https://github.com/JakeSharp/ProductsliderM2/archive/master.zip">here</a> 
+	- download the module ZIP file from <a href="https://github.com/trive-digital/Revo-ProductSliderM2/archive/master.zip">here</a> 
 	- extract files
 	- create directory in the <strong>app/code/Trive/Revo</strong>
 	- upload extracted files there
@@ -53,7 +53,7 @@ pass: <strong>demo123</strong>
 - <strong>or using Git</strong>:
 	- create directory in the <strong>app/code/Trive/Core</strong>
 	- clone core module with: <strong>git clone https://github.com/trive-digital/CoreMagento2.git .</strong>
-	- create directory in the <strong>app/code/JakeSharp/Revo</strong>
+	- create directory in the <strong>app/code/Trive/Revo</strong>
 	- clone module with: <strong>git clone https://github.com/trive-digital/Revo-ProductSliderM2.git .</strong>
 
 <h2>Step 2</h2>
