@@ -12,15 +12,15 @@ A FREE Magento 2 module to create and manage product sliders.
 Or **mix and match** with the ones you want, or just make a **custom slider**. Choices. Good to have them.
 
 # Features:
-- ⏱ **Schedule slider** - Publish on specific date and time
-- **Place anywhere** - Or exclude from an area like checkout and cart
-- **Place easily** - using either XML, .phtml or a *widget*
-- Display products in a default basic grid if needed
-- 🎉 **Slider effects** - Choose any you like
-- 🖖 **Pick and choose** - Add products manually <br/>
-  For example: Your online channel just launched and Magento doesn't have a clue which your bestseller products are.
-- **General settings** - One set of settings to rule them all
-- **Per slider settings** - Exclude from the general rules
+- **NO developer needed!** - Profit!
+- ⏱ **Slider schedule** - Schedule publishing at any time Place it anywhere - Even on checkout and cart
+- **It's east to place** - via XML, .phtml or a widget
+- **Products grid display**
+- 🎉  **Slider effects** - Choose the right one.
+- 🖖 **Hybrid product selection** - Let Magento take care of the data or add products manually
+- **General slider settings** - One set of settings applied to all Per slider settings
+- **Per slider settings**
+- **Slick.js** - Revo uses Slick.js library
 
 <br/>
 
