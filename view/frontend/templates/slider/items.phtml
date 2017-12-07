@@ -7,7 +7,7 @@
 <?php $_items = $block->getSliderProductsCollection() ?>
 <?php if(count($_items)==0) : ?>
 <?php return  ?>
-<?php endif ?>
+<?php endif; ?>
 
 <?php $_helper = $this->helper('Magento\Catalog\Helper\Output') ?>
 <?php $sliderId = $block->getSliderDisplayId() ?>
@@ -38,7 +38,7 @@
                     <?php foreach ($collection as $_item): ?>
 
                     <?php /* @escapeNotVerified */ echo($iterator++ == 1) ? '<li class="item product product-item">' : '</li><li class="item product product-item">' ?>
-                    <div class="<?php if($enableSwatches): ?>product-item-info<?php endif ?> product-item-info<?php echo $slider->getGrid() ? '' : '-'.$class ?>">
+                    <div class="<?php if($enableSwatches): ?>product-item-info<?php endif; ?> product-item-info<?php echo $slider->getGrid() ? '' : '-'.$class ?>">
                         <a href="<?php /* @escapeNotVerified */ echo $block->getProductUrl($_item) ?>" class="product photo product-item-photo">
                             <?php echo $block->getImage($_item, $image)->toHtml(); ?>
                         </a>
@@ -48,15 +48,15 @@
                             </strong>
                             <?php if($slider->getDisplayPrice()): ?>
                                 <?php /* @escapeNotVerified */ echo $block->getProductPrice($_item); ?>
-                            <?php endif ?>
+                            <?php endif; ?>
                             <?php if ($templateType): ?>
                                 <?php echo $block->getReviewsSummaryHtml($_item, $templateType) ?>
                             <?php endif; ?>
 
                             <?php echo $block->getRevoProductDetailsHtml($_item); ?>
 
-                            <?php if ($showWishlist || $showCompare || $showCart): ?>
-                                <?php if($enableSwatches): ?><div class="product-item-inner"> <?php endif ?>
+                            <?php if($showWishlist || $showCompare || $showCart) { ?>
+                                <?php if(true){ ?><div class="product-item-inner"><?php } ?>
                                     <div class="product actions product-item-actions">
                                         <?php if ($showCart): ?>
                                             <div class="actions-primary">
@@ -120,8 +120,8 @@
                                             </div>
                                         <?php endif; ?>
                                     </div>
-                                <?php if($enableSwatches): ?></div> <?php endif ?>
-                            <?php endif; ?>
+                                <?php if(true){ ?></div><?php } ?>
+                            <?php } ?>
                         </div>
                     </div>
                     <?php echo($iterator == count($collection)+1) ? '</li>' : '' ?>
@@ -129,7 +129,7 @@
                 <?php endforeach ?>
             </ol>
         </div>
-        <?php endif ?>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -174,5 +174,4 @@
         })
     });
 </script>
-<?php endif ?>
-
+<?php endif; ?>
