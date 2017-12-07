@@ -26,13 +26,13 @@
 <div class="block block-product-slider slider-list <?php /* @escapeNotVerified */ echo $class; ?>" <?php echo $slider->getRtl() ? 'dir="rtl" ' : "" ?> >
     <?php if($slider->getDisplayTitle()): ?>
         <div class="block-title title">
-            <strong id="block-<?php /* @escapeNotVerified */ echo $class?>-heading" role="heading" aria-level="2"><?php /* @escapeNotVerified */ echo $slider->getTitle() ?></strong>
+            <strong id="block-<?php /* @escapeNotVerified */ echo $class?>-heading" role="heading" aria-level="2"><?php /* @escapeNotVerified */ echo __($slider->getTitle()) ?></strong>
         </div>
     <?php endif ?>
     <div class="block-content content" aria-labelledby="block-<?php /* @escapeNotVerified */ echo $class?>-heading">
         <?php if(!empty($_items)): ?>
             <div class="products wrapper grid products-grid products-<?php /* @escapeNotVerified */ echo $type; ?>">
-            <ol class="products list items product-slider<?php echo $sliderId ?>">
+            <ol class="products list items slider-id-<?php echo $slider->getSliderId() ?> product-slider<?php echo $sliderId ?>">
                 <?php foreach($_items as $collection): ?>
                     <?php $iterator = 1; ?>
                     <?php foreach ($collection as $_item): ?>

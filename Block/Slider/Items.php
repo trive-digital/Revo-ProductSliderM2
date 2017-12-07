@@ -126,6 +126,18 @@ class Items extends \Magento\Catalog\Block\Product\AbstractProduct
     }
 
     /**
+     * {@inheritdoc}
+     */
+    protected function _construct()
+    {
+        parent::_construct();
+        $this->addData([
+            'cache_lifetime' => 86400,
+            'cache_tags' => [\Magento\Catalog\Model\Product::CACHE_TAG,
+        ], ]);
+    }
+
+    /**
      * @param $type
      * @return Collection|\Magento\Catalog\Model\ResourceModel\Product\Collection|string
      */
